@@ -1,0 +1,67 @@
+cabal-version: 2.4
+name:           aoc2023
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/agnantis/aoc2023#readme>
+homepage:       https://github.com/agnantis/aoc2023#readme
+bug-reports:    https://github.com/agnantis/aoc2023/issues
+author:         Kostas Agnantis
+maintainer:     kagnadis@gmail.com
+copyright:      2023 Kostas Agnantis
+license:        BSD-3-Clause
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    CHANGELOG.md
+
+source-repository head
+  type: git
+  location: https://github.com/agnantis/aoc2023
+
+library
+  exposed-modules:
+      AoC.Day1
+      AoC.Utils
+      Lib
+  other-modules:
+      Paths_aoc2022
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
+  build-depends:
+      array
+    , base ^>=4.14.3.0
+    , containers
+    , megaparsec
+  default-language: Haskell2010
+
+executable aoc2023-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_aoc2022
+  hs-source-dirs:
+      app
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2022
+    , array
+    , base ^>=4.14.3.0
+    , containers
+    , megaparsec
+  default-language: Haskell2010
+
+test-suite aoc2023-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_aoc2022
+  hs-source-dirs:
+      test
+  ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aoc2022
+    , array
+    , base ^>=4.14.3.0
+    , containers
+    , megaparsec
+  default-language: Haskell2010
