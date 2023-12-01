@@ -51,7 +51,7 @@ executables:
     - aoc2023
 
 tests:
-  aoc2022-test:
+  aoc2023-test:
     main:                Spec.hs
     source-dirs:         test
     ghc-options:

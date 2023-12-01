@@ -24,7 +24,7 @@ library
       AoC.Utils
       Lib
   other-modules:
-      Paths_aoc2022
+      Paths_aoc2023
   hs-source-dirs:
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
@@ -38,12 +38,12 @@ library
 executable aoc2023-exe
   main-is: Main.hs
   other-modules:
-      Paths_aoc2022
+      Paths_aoc2023
   hs-source-dirs:
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      aoc2022
+      aoc2023
     , array
     , base ^>=4.14.3.0
     , containers
@@ -54,12 +54,12 @@ test-suite aoc2023-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_aoc2022
+      Paths_aoc2023
   hs-source-dirs:
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      aoc2022
+      aoc2023
     , array
     , base ^>=4.14.3.0
     , containers
